@@ -1,4 +1,4 @@
-import { Avatar } from "@material-ui/core";
+import { Avatar, Button } from "@material-ui/core";
 import React, { useState } from "react";
 import "./MessageSender.css";
 import VideocamIcon from "@material-ui/icons/Videocam";
@@ -42,9 +42,9 @@ function MessageSender() {
             onChange={(e) => setImageUrl(e.target.value)}
             placeholder="URL imagen (opcional)"
           />
-          <button onClick={handleSubmit} type="submit">
-            Hidden submit
-          </button>
+          <Button onClick={handleSubmit} type="submit">
+            Send
+          </Button>
         </form>
       </div>
       <div className="messageSender__bottom">

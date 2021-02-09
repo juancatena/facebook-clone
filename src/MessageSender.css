@@ -28,14 +28,22 @@
   background-color: #eff2f5;
 }
 
-@media (max-width: 1200px) {
-  .messageSender__top > form > button {
-    display: visible;
-  }
+.messageSender__top > form > Button {
+  display: none;
 }
 
-.messageSender__top > form > button {
-  display: none;
+@media screen and (max-width: 1200px) {
+  .messageSender__top > form > Button {
+    display: block;
+    background-color: #2e81f4;
+    color: #eff2f5;
+    font-weight: 800;
+  }
+
+  .messageSender__top > form > Button:hover {
+    background-color: white;
+    color: #2e81f4;
+  }
 }
 
 .messageSender__input {
